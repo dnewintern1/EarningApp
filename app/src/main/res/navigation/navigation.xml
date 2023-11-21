@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFrag">
 
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.base.earningapp.Fragment.HomeFrag"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/spinFrag"
+        android:name="com.base.earningapp.Fragment.SpinFrag"
+        android:label="fragment_spin"
+        tools:layout="@layout/fragment_spin" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/historyFrag"
+        android:name="com.base.earningapp.Fragment.HistoryFrag"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+    </fragment>
+    <fragment
+        android:id="@+id/profileFrag"
+        android:name="com.base.earningapp.Fragment.ProfileFrag"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

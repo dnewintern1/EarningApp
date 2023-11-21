@@ -7,6 +7,10 @@ android {
     namespace = "com.base.earningapp"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.base.earningapp"
         minSdk = 24
